@@ -12,8 +12,9 @@ const tmpl = `
             text-align: center;
         }
     </style>
-    <div class="wall">
+    <div class="wall">        
         <h1>Web Components App</h1>  
+        <p>The Outer Component</p>
         <slot></slot>
     </div>
 `
