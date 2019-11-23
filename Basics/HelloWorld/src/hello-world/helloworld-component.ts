@@ -1,5 +1,4 @@
-import template from './hello-world/template.html';
-
+import template from './template.html';
 
 export class HelloWorld extends HTMLElement {
   private buttonEl: HTMLElement | null = null;
@@ -32,4 +31,4 @@ export class HelloWorld extends HTMLElement {
     this.valueEl.textContent = this.value.toString();
   };
 }
-window.customElements.define('hello-world', HelloWorld);
+

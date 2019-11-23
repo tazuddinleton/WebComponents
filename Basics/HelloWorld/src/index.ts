@@ -1,6 +1,5 @@
 import {HelloWorld} from './hello-world/helloworld-component';
 
-
 const tmpl = `
     <style>
         h1{
@@ -14,7 +13,8 @@ const tmpl = `
         }
     </style>
     <div class="wall">
-        <h1>Web Components App</h1>            
+        <h1>Web Components App</h1>  
+        <slot></slot>
     </div>
 `
 
@@ -27,4 +27,5 @@ class AppComponent extends HTMLElement{
         shadow.appendChild(el);        
     }
 }
-window.customElements.define('app-component', AppComponent);
+customElements.define('hello-world', HelloWorld);
+customElements.define('app-component', AppComponent);
