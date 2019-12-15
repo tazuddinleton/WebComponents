@@ -1,5 +1,5 @@
 import {HelloWorld} from './hello-world/helloworld-component';
-
+import {Login} from './login/login-component';
 const tmpl = `
     <style>
         h1{
@@ -30,3 +30,4 @@ class AppComponent extends HTMLElement{
 }
 customElements.define('hello-world', HelloWorld);
 customElements.define('app-component', AppComponent);
+customElements.define('login-component', Login);
